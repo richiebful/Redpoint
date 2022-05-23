@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:red_point/components/bordered_section.dart';
 import 'package:red_point/components/divider_title.dart';
 import 'package:red_point/components/route_sorting_popup_menu.dart';
+import 'package:red_point/components/mini_map.dart';
 import 'package:red_point/models/route.dart';
 import 'package:red_point/pages/route_page.dart';
 import 'package:red_point/components/charts/grade_histogram_detailed.dart';
-import 'package:red_point/components/custom_card.dart';
 import 'package:red_point/components/charts/types_chart.dart';
 import 'package:red_point/components/route/route_list_tile.dart';
 import 'package:red_point/models/route.dart' as R;
@@ -148,19 +148,19 @@ class _OverviewState extends State<_Overview> {
 
     return ListView(
       children: <Widget>[
-        // MAP
-        // DividerTitle('Map'),
-        // Container(
-        //   margin: EdgeInsets.symmetric(vertical: 6.0, horizontal: 14.0),
-        //   height: 200.0,
-        //   decoration: BoxDecoration(
-        //     borderRadius: BorderRadius.circular(4.0),
-        //     border: Border.all(
-        //       color: Colors.blueGrey[100],
-        //     ),
-        //   ),
-        //   child: MiniMap(_wall.id),
-        // ),
+        //MAP
+        DividerTitle('Map'),
+        Container(
+          margin: EdgeInsets.symmetric(vertical: 6.0, horizontal: 14.0),
+          height: 200.0,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(4.0),
+            border: Border.all(
+              color: Colors.blueGrey[100],
+            ),
+          ),
+          child: MiniMap(_wall.id),
+        ),
         // DIRECTIONS
         DividerTitle('Directions'),
         BorderedSection(

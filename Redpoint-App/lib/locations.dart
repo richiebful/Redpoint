@@ -236,7 +236,7 @@ final Map locations = {
     "lng": -83.722,
     "lat": 37.651,
   },
-  1295: {
+  1717: {
     "name": "Chocolate Factory",
     "lng": -83.713,
     "lat": 37.649,
